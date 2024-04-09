@@ -1,7 +1,6 @@
 package com.movierecommender;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import lombok.Builder;
@@ -13,7 +12,7 @@ public class Movie {
 
     public String name;
     public int length;
-    public Date releaseDate;
+    public int releaseYear;
 
     @Builder.Default
     public List<String> genres = new ArrayList<>();

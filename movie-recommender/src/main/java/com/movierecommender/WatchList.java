@@ -1,9 +1,7 @@
 package com.movierecommender;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -28,10 +26,10 @@ public class WatchList {
     private List<Movie> loadMovieList() {
         System.out.println("Loading movie list");
 
-        Movie movie1 = Movie.builder().name("The Shawshank Redemption").genres(Arrays.asList("drama", "crime")).releaseDate(new Date()).build();
-        Movie movie2 = Movie.builder().name("Dark Knight").genres(Arrays.asList("drama", "crime", "thriller")).releaseDate(new Date()).build();
-        Movie movie3 = Movie.builder().name("Parasite").genres(Arrays.asList("drama", "thriller", "comedy")).releaseDate(new Date()).build();
-        Movie movie4 = Movie.builder().name("The Notebook").genres(Arrays.asList("drama")).releaseDate(new Date()).build();
+        Movie movie1 = Movie.builder().name("The Shawshank Redemption").genres(Arrays.asList("drama", "crime")).releaseYear(1994).build();
+        Movie movie2 = Movie.builder().name("Dark Knight").genres(Arrays.asList("drama", "crime", "thriller")).releaseYear(2008).build();
+        Movie movie3 = Movie.builder().name("Parasite").genres(Arrays.asList("drama", "thriller", "comedy")).releaseYear(2019).build();
+        Movie movie4 = Movie.builder().name("The Notebook").genres(Arrays.asList("drama")).releaseYear(2004).build();
 
         movieList.addAll(Arrays.asList(movie1,movie2, movie3, movie4));
 
